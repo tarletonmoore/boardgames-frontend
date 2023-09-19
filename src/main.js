@@ -4,7 +4,7 @@ import router from './router';
 import axios from "axios";
 
 axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://127.0.0.1:8000" : "/";
+axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:8000" : "/";
 
 
 createApp(App).use(router).mount('#app');
